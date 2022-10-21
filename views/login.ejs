@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link href="/css/style.sass" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <div id="main">
+        <div id="aside">
+            <img src="/assets/logo.png" alt="">
+        </div>
+        <div id="form">
+            <div id="title">
+                <p>Login</p>
+                <a href="/register">Não tenho conta ainda</a>
+            </div>
+            <form method="POST" action="/login" style="max-height: 400px;">
+                <%if (typeof msg !== 'undefined' && msg !== '') { %>
+                    <div id="warning"><%- msg %></div>
+                <% } %>
+
+                <div class="input-item">
+                    <img src="/assets/login-user.svg" alt="">
+                    <input type="text" name="user" placeholder="Nome de usuário"/>
+                </div>
+                <div class="input-item">
+                    <img src="/assets/login-pass.svg" alt="">
+                    <input type="password" name="pass" placeholder="Senha">
+                </div>
+
+                <a href="/pass-recovery">Esqueci minha senha</a>
+
+                <div id="submit-wrapper">
+                    <input type="image" src="/assets/login-submit.svg" alt="Submit Form"/>
+                </div>
+            </form>
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  font-family: Calibri;
+  font-size: 1rem;
+  color: #ECECEC;
+  margin: 0;
+  padding: 0;
+}
+body p {
+  padding: 0;
+  margin: 0;
+}
+body .large-text {
+  font-size: 1.75rem;
+  font-weight: 100;
+}/*# sourceMappingURL=global.css.map */

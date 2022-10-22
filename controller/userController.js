@@ -32,11 +32,19 @@ module.exports = {
                                         res.render('login.ejs', {msg: 'E-mail já cadastrado a uma conta'})
                                         res.end()
                                     }else{
-                                        bcrypt.hash(req.body.pass, saltRounds, function(err, hash){
-                                            var dev = req.body.dev === undefined ? 0 : 1
-                                            userModel.insert(user, req.body.email, hash, dev)
-                                            res.redirect('/login')
-                                        })
+                                        console.log(req.body.pass)
+                                        console.log(req.body.passConf)
+                                        console.log(req.body.pass.localeCompare(req.body.passConf))
+                                        req.body.pass.localeCompare(req.body.passConf) != -1 ? (
+                                            bcrypt.hash(req.body.pass, saltRounds, function(err, hash){
+                                                var dev = req.body.dev === undefined ? 0 : 1
+                                                userModel.insert(user, req.body.email, hash, dev)
+                                                res.redirect('/login')
+                                            })
+                                        ) : (
+                                            res.render('register.ejs', {msg: 'Senhas devem coincidir'}),
+                                            res.end()
+                                        )
                                     }
                                 })
                             .catch(err =>

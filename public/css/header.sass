@@ -1,0 +1,104 @@
+@import 'settings/_color', 'settings/_font'
+
+.unselectable
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+
+#header
+    background-image: url("/assets/home-bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+    #main-header
+        display: flex
+        justify-content: space-between
+        height: 50px
+        width: 100%
+        
+        .main-header-item
+            display: flex
+            justify-content: center
+
+        .limit
+            width: 30%
+
+        img
+            width: auto
+            margin: 5px 0 5px 0
+
+        ul
+            padding: 0
+            margin: 0
+            color: $grayscale4
+            line-height: 50px
+
+            li
+                display: inline
+                margin: 0 20px
+                padding: 0
+
+                a
+                    text-decoration: none
+                    color: $grayscale4
+                
+            .li-highlight
+                background-color: $grayscale4
+                padding: 5px 15px
+                margin: 0
+                color: $grayscale1
+                border-radius: 5px
+
+                a
+                    color: $grayscale1
+
+            .selected
+                border-bottom: 1px solid $grayscale4
+
+    #extra-header
+        #extra-header-main
+            padding: 40px 0px 30px 0px
+            text-align: center
+
+            img
+                width: 250px
+                margin: 0 auto
+            
+            p
+                margin: 15px 0
+                color: $grayscale4
+                font-size: $normal-text
+
+            a
+                border: 1px solid $grayscale4
+                border-radius: 5px
+                padding: 5px 15px
+                text-decoration: none
+                color: $grayscale4
+
+            .transparent-button
+                margin: 25px 0 35px 0
+                font-size: $small-text
+
+            @keyframes arrow-drop 
+                0% 
+                    margin-top: 0px
+                50%
+                    margin-top: 5px
+                100% 
+                    margin-top: 0px
+
+            img:last-child
+                left: 0 
+                right: 0
+                margin-left: auto
+                margin-right: auto
+                position: absolute
+                width: 15px
+                margin-top: 20px
+                animation: arrow-drop 1.5s linear infinite

@@ -1,0 +1,116 @@
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#header {
+  background-image: url("/assets/home-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header #main-header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+}
+#header #main-header .main-header-item {
+  display: flex;
+  justify-content: center;
+}
+#header #main-header .limit {
+  width: 30%;
+}
+#header #main-header img {
+  width: auto;
+  margin: 5px 0 5px 0;
+}
+#header #main-header ul {
+  padding: 0;
+  margin: 0;
+  color: #ECECEC;
+  line-height: 50px;
+}
+#header #main-header ul li {
+  display: inline;
+  margin: 0 20px;
+  padding: 0;
+}
+#header #main-header ul li a {
+  text-decoration: none;
+  color: #ECECEC;
+}
+#header #main-header ul .li-highlight {
+  background-color: #ECECEC;
+  padding: 5px 15px;
+  margin: 0;
+  color: #080609;
+  border-radius: 5px;
+}
+#header #main-header ul .li-highlight a {
+  color: #080609;
+}
+#header #main-header ul .selected {
+  border-bottom: 1px solid #ECECEC;
+}
+#header #extra-header #extra-header-main {
+  padding: 40px 0px 30px 0px;
+  text-align: center;
+}
+#header #extra-header #extra-header-main img {
+  width: 250px;
+  margin: 0 auto;
+}
+#header #extra-header #extra-header-main p {
+  margin: 15px 0;
+  color: #ECECEC;
+  font-size: 1rem;
+}
+#header #extra-header #extra-header-main a {
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #ECECEC;
+}
+#header #extra-header #extra-header-main .transparent-button {
+  margin: 25px 0 35px 0;
+  font-size: 0.75rem;
+}
+@-webkit-keyframes arrow-drop {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+@keyframes arrow-drop {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+#header #extra-header #extra-header-main img:last-child {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 15px;
+  margin-top: 20px;
+  -webkit-animation: arrow-drop 1.5s linear infinite;
+          animation: arrow-drop 1.5s linear infinite;
+}/*# sourceMappingURL=header.css.map */

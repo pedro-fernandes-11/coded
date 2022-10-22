@@ -1,0 +1,119 @@
+body {
+  background-color: #080609;
+}
+body .action-btn {
+  background-color: #0190C9;
+  padding: 5px 15px;
+  margin: 0;
+  color: #ECECEC;
+  border-radius: 5px;
+  text-decoration: none;
+}
+body .action-btn-1 {
+  background-color: #AD1E4C;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-1 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+body .action-btn-2 {
+  background-color: #DF6550;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-2 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+body .action-btn-3 {
+  background-color: #0D3263;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-3 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+body #template-section {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #template-section #search-bar-wrapper {
+  width: 100%;
+  text-align: center;
+}
+body #template-section #search-bar-wrapper p {
+  margin-top: 10px;
+  color: #ECECEC;
+  font-size: 1rem;
+}
+body #template-section #search-bar-wrapper input {
+  margin: 20px 0;
+  width: 35%;
+  height: 20px;
+  padding: 5px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+  border: 1px solid #0190C9;
+  border-radius: 5px;
+  background-color: #2C2C2C;
+  color: #ECECEC;
+  outline: none;
+}
+body #template-section #pvw-templates {
+  background-color: #2C2C2C;
+  width: 80vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+body #template-section #pvw-templates #pvw-title-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 25px 0;
+}
+body #template-section #pvw-templates #pvw-title-section div {
+  align-self: center;
+}
+body #template-section #pvw-templates #pvw-wrapper {
+  margin: 15px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+body #template-section #pvw-templates #pvw-wrapper .pvw-template {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-image: url("/assets/pvw-template-filler.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #template-section #pvw-templates #pvw-wrapper .pvw-template .pvw-goto {
+  height: 200px;
+}
+body #template-section #pvw-templates #pvw-wrapper .pvw-template .pvw-categories {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #ECECEC;
+  border-top: 5px solid #2C2C2C;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body #template-section #pvw-templates #pvw-wrapper .pvw-template .pvw-categories div {
+  flex: 1;
+}/*# sourceMappingURL=index.css.map */

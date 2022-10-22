@@ -1,0 +1,117 @@
+@import 'settings/_color', 'settings/_font'
+
+body
+    background-color: $grayscale1
+
+    .action-btn
+        background-color: $secondary2
+        padding: 5px 15px
+        margin: 0
+        color: $grayscale4
+        border-radius: 5px
+        text-decoration: none
+
+    .action-btn-1
+        background-color: $primary1
+        padding: 5px 15px
+        border-radius: 5px
+        text-align: center
+        a
+            margin: 0
+            color: $grayscale4
+            text-decoration: none
+            font-size: $small-text
+
+    .action-btn-2
+        background-color: $primary2
+        padding: 5px 15px
+        border-radius: 5px
+        text-align: center
+        a    
+            margin: 0
+            color: $grayscale4
+            text-decoration: none
+            font-size: $small-text
+
+    .action-btn-3
+        background-color: $secondary1
+        padding: 5px 15px
+        border-radius: 5px
+        text-align: center
+        a
+            margin: 0
+            color: $grayscale4
+            text-decoration: none
+            font-size: $small-text
+
+    #template-section
+        padding: 15px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        #search-bar-wrapper
+            width: 100%
+            text-align: center
+
+            p
+                margin-top: 10px
+                color: $grayscale4
+                font-size: $normal-text
+            
+            input
+                margin: 20px 0
+                width: 35%
+                height: 20px
+                padding: 5px
+                font-size: $small-text
+                margin-left: 5px
+                border: 1px solid $secondary2
+                border-radius: 5px
+                background-color: $grayscale2
+                color: $grayscale4
+                outline: none
+        
+        #pvw-templates
+            background-color: $grayscale2
+            width: 80vw
+            padding: 20px
+            border-radius: 10px
+
+            #pvw-title-section
+                display: flex
+                justify-content: space-between
+                padding: 15px 0 25px 0
+
+                div
+                    align-self: center
+
+            #pvw-wrapper
+                margin: 15px 0 0 0
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                gap: 15px
+
+                .pvw-template
+                    display: flex
+                    flex-direction: column
+                    border-radius: 10px
+                    background-image: url("/assets/pvw-template-filler.png")
+                    background-position: center
+                    background-size: cover
+                    background-repeat: no-repeat
+
+                    .pvw-goto
+                        height: 200px
+
+                    .pvw-categories
+                        display: flex
+                        gap: 10px
+                        padding: 10px
+                        background-color: $grayscale4
+                        border-top: 5px solid $grayscale2
+                        border-bottom-left-radius: 10px
+                        border-bottom-right-radius: 10px
+
+                        div
+                            flex: 1

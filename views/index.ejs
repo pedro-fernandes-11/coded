@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <head>
-    <link href="/css/style.scss" rel="stylesheet" type="text/css">
-    <title>CODED | Home</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <title>Início</title>
 </head>
 <body>
-    <div class="container">
-        <%- include('layout/header'); %>
-        <div id="main">
-
+    <%- include('layout/header'); %>
+    <div id="template-section">
+        <div id="search-bar-wrapper">
+            <p>Conheça os templates mais modernos da atualidade</p>
+            <input type="text" placeholder="Pesquise por templates...">
         </div>
-        <%- include('layout/footer'); %>
+        <div id="pvw-templates">
+            <div id="pvw-title-section">
+                <div>
+                    <p class="large-text">PREVIEW DOS TEMPLATES</p>
+                    <p class="normal-text">Melhor avaliados</p>
+                </div>
+                <div>
+                    <a href="/templates" class="action-btn">VER TODOS</a>
+                </div>
+            </div>
+            <div id="pvw-wrapper">
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+                <div class="pvw-template">
+                    <div class="pvw-goto">
+                        <a href="/templates/1">VER TEMPLATE</a>
+                    </div>
+                    <div class="pvw-categories">
+                        <div class="action-btn-1"><a href="/templates/tech">Tecnologia</a></div>
+                        <div class="action-btn-2"><a href="/templates/inovation">Inovação</a></div>
+                        <div class="action-btn-3"><a href="/templates/cybersecurity">Cibersegurança</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <%- include('layout/footer'); %>
+    <script src="/js/handle-down-arrow.js"></script>
 </body>
 </html>

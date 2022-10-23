@@ -1,0 +1,20 @@
+<div class="main-header-item limit">
+    <img src="/assets/logo.svg" class="unselectable" alt="" onclick="location.href='/'">
+</div>
+<div class="main-header-item">
+    <ul class="nav-bar unselectable">
+        <li class="selected"><a href="/">Início</a></li>
+        <li><a href="/templates">Templates</a></li>
+    </ul>
+</div>
+<div class="main-header-item limit">
+    <ul class="unselectable">
+        <% if (typeof isLoggedIn !== 'undefined' && isLoggedIn !== '') { %>
+            <li><a href="/logout">Logout</a></li>
+            <li class="transparent-button"><a href="/user/<%-userId%>"><%=user%></a></li>
+        <% }else{ %>
+            <li><a href="/login">Login</a></li>
+            <li class="li-highlight"><a href="/register">Cadastro</a></li>
+        <% } %>
+    </ul>
+</div>

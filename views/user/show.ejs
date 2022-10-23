@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/user/local.css" rel="stylesheet">
+    <title>Início</title>
+</head>
+<body>
+    <div id="header">
+        <div id="main-header">
+            <%- include('../layout/main-header'); %>
+        </div>
+    </div>
+    <div id="content-wrapper">
+        <div id="content">
+            <p><%=name%></p>
+            <p><%=email%></p>
+            <p><%=dev%></p>
+            <img src="/assets/user/<%-img%>" alt="">
+        </div>
+    </div>
+    <%- include('../layout/footer'); %>
+</body>
+</html>

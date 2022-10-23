@@ -1,6 +1,3 @@
-body {
-  background-color: #080609;
-}
 body .action-btn {
   background-color: #0190C9;
   padding: 5px 15px;
@@ -75,7 +72,7 @@ body #template-section #search-bar-wrapper input {
 }
 body #template-section #pvw-templates {
   background-color: #2C2C2C;
-  width: 80vw;
+  width: 80%;
   padding: 20px;
   border-radius: 10px;
 }

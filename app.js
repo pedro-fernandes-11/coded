@@ -6,6 +6,7 @@ const app = express()
 
 //const wizardsController = require('./controller/wizardsController')
 const userController = require('./controller/userController')
+const userProfileController = require('./controller/userProfileController')
 
 app.use(session({
     secret: '829719F301',
@@ -20,8 +21,8 @@ app.set('view engine', 'ejs')
 
 
 app.get('/', function(req, res){
-    res.render('index.ejs', {
-        user: req.session.username, isLoggedIn: req.session.loggedin
+    res.render('index', {
+        user: req.session.username, isLoggedIn: req.session.loggedin, userId: req.session.userId, userImg: req.session.userImg
     })
 })
 
@@ -37,6 +38,16 @@ app.post('/wizards/edit/:id', wizardsController.update)
 app.get('/wizards/delete/:id', wizardsController.destroy)
 */
 
+// Profile routes
+
+app.get('/user/:id', userProfileController.show)
+
+// Error route
+
+app.get('/error', function(req, res){
+    res.render('error')
+})
+
 // Auth routes
 
 app.get('/register', userController.register)
@@ -47,6 +58,6 @@ app.post('/login', userController.auth)
 
 app.get('/logout', userController.logout)
 
-app.listen(80, function(){
-    console.log("Listening in port 80")
+app.listen(8080, function(){
+    console.log("Listening in port 8080")
 })

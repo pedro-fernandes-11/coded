@@ -1,0 +1,19 @@
+#content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+}
+#content-wrapper #cn-profile {
+  background-color: #2C2C2C;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+#content-wrapper #cn-profile #cn-title-section {
+  display: flex;
+  flex-direction: column;
+}
+#content-wrapper #cn-profile #cn-title-section img {
+  border-radius: 50%;
+  width: 50px;
+}/*# sourceMappingURL=local.css.map */

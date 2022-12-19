@@ -43,7 +43,7 @@ body .action-btn-3 a {
   font-size: 0.75rem;
 }
 body #template-section {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,6 +75,7 @@ body #template-section #pvw-templates {
   width: 80%;
   padding: 20px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 body #template-section #pvw-templates #pvw-title-section {
   display: flex;
@@ -113,4 +114,31 @@ body #template-section #pvw-templates #pvw-wrapper .pvw-template .pvw-categories
 }
 body #template-section #pvw-templates #pvw-wrapper .pvw-template .pvw-categories div {
   flex: 1;
+}
+body #team-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #team-section #pvw-team {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+body #team-section #pvw-team #be-part {
+  background-color: #2C2C2C;
+  padding: 35px 20px;
+  border-radius: 10px;
+  width: 50%;
+  box-sizing: border-box;
+}
+body #team-section #pvw-team #be-part p {
+  margin-bottom: 20px;
+}
+body #team-section #pvw-team #profile-example {
+  width: 50%;
+  text-align: right;
+}
+body #team-section #pvw-team #profile-example img {
+  width: 90%;
 }/*# sourceMappingURL=index.css.map */

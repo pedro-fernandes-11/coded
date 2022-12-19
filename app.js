@@ -19,7 +19,6 @@ app.set('view engine', 'ejs')
 
 // Coded routes
 
-
 app.get('/', function(req, res){
     res.render('index', {
         user: req.session.username, isLoggedIn: req.session.loggedin, userId: req.session.userId, userImg: req.session.userImg

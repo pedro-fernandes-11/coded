@@ -43,7 +43,7 @@ body
             font-size: $small-text
 
     #template-section
-        padding: 15px 0
+        padding: 15px 0 0 0
         display: flex
         flex-direction: column
         align-items: center
@@ -75,6 +75,7 @@ body
             width: 80%
             padding: 20px
             border-radius: 10px
+            box-sizing: border-box
 
             #pvw-title-section
                 display: flex
@@ -113,3 +114,29 @@ body
 
                         div
                             flex: 1
+    #team-section
+        display: flex
+        align-items: center
+        justify-content: center
+
+        #pvw-team
+            width: 80%
+            display: flex
+            align-items: center
+
+            #be-part
+                background-color: $grayscale2
+                padding: 35px 20px
+                border-radius: 10px
+                width: 50%
+                box-sizing: border-box
+                
+                p
+                    margin-bottom: 20px
+
+            #profile-example
+                width: 50%
+                text-align: right
+
+                img
+                    width: 90%

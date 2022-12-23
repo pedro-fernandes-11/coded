@@ -83,6 +83,7 @@ module.exports = {
                             req.session.username = result[0]['name']
                             req.session.userId = result[0]['id']
                             req.session.userImg = "assets/user/"+result[0]['img']+".svg"
+                            req.session.userEmail = result[0]['email']
 
                             res.redirect('/')
                         }else{

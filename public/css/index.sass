@@ -1,8 +1,12 @@
 @import 'settings/_color', 'settings/_font'
 
 body
+    .wrapper
+        display: flex
+        justify-content: center
+
     .action-btn
-        background-color: $secondary2
+        background-color: $secondary2 !important
         padding: 5px 15px
         margin: 0
         color: $grayscale4
@@ -114,6 +118,7 @@ body
 
                         div
                             flex: 1
+
     #team-section
         display: flex
         align-items: center
@@ -142,3 +147,149 @@ body
                     width: 70%
                     max-height: 700px
                     object-fit: cover
+
+    #technologies-section
+        background-image: url("/assets/home-bg-alt.png")
+
+        p
+            text-align: center
+        >p
+            padding-top: 35px
+
+        #technologies-list-wrapper
+            display: flex
+            justify-content: center
+
+            .technologies-list-item
+                border-radius: 10px
+                width: 450px
+                height: 400px
+                margin: 35px
+                display: flex
+                justify-content: center
+                align-items: flex-start
+
+                >p
+                    width: 30%
+                    padding: 8px
+                    box-sizing: border-box
+                    border-radius: 5px
+                    margin-top: -15px
+
+            .html-tech
+                background-image: url("/assets/html-code.png")
+
+                >p
+                    background-color: $primary1
+
+            .css-tech
+                background-image: url("/assets/css-code.png")
+
+                >p
+                    background-color: $secondary2
+    
+    #reasons-section
+        display: flex
+        justify-content: center
+
+        #reasons-wrapper
+            width: 80%
+            padding: 35px
+            box-sizing: border-box
+        
+        p
+            text-align: center
+
+        #reasons-list-wrapper
+            display: flex
+            justify-content: center
+            padding: 45px 0 0 0
+            box-sizing: border-box
+
+            .reasons-list-item
+                background-color: $grayscale2
+                border-radius: 15px
+                padding: 30px
+                box-sizing: border-box
+                margin: 0 15px
+
+                >p
+                    text-align: start
+                    padding: 15px 0 0 0
+
+                div
+                    margin: -50px 0 0 0
+                    background-color: $secondary2
+                    border-radius: 50%
+                    width: 40px
+                    height: 40px
+                    padding: 5px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    img
+                        width: 65%
+
+    #contact-section    
+        display: flex
+        justify-content: center
+
+        #form-wrapper
+            background-image: url("/assets/contact-section.png")
+            background-size: cover
+            background-repeat: no-repeat
+
+            width: 80%
+            display: flex
+            justify-content: center
+
+            padding: 35px 0
+            border-radius: 15px 
+
+            form
+                background-color: #2c2c2cb6
+                width: 70%
+                padding: 50px
+                box-sizing: border-box
+                border-radius: 15px
+
+                p
+                    padding: 0 0 10px 0 
+
+                p:first-child
+                    padding: 0 0 20px 0
+                
+                input
+                    width: 100%
+                    margin: 0 0 30px 0
+                    border-radius: 5px
+                    box-sizing: border-box
+                    padding: 15px
+                    color: white
+                    
+                    background-color: $grayscale1
+                    outline: none
+                    border: none
+
+                textarea
+                    width: 100%
+                    border-radius: 5px
+                    box-sizing: border-box
+                    padding: 15px
+                    color: white
+
+                    background-color: $grayscale1
+                    outline: none
+                    border: none
+
+                    min-height: 50px
+                    max-height: 200px
+                    resize: vertical
+
+                div
+                    padding: 30px 0 0 0
+
+                    input[type=submit]
+                        width: auto
+                        margin: 0

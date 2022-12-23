@@ -23,7 +23,7 @@
         <div id="pvw-templates">
             <div id="pvw-title-section">
                 <div>
-                    <p class="large-text">PREVIEW DOS TEMPLATES</p>
+                    <p class="medium-text">PREVIEW DOS TEMPLATES</p>
                     <p class="normal-text">Melhor avaliados</p>
                 </div>
                 <div>
@@ -111,8 +111,66 @@
             </div>
         </div>
     </div>
-    <div id="">
+    <div id="technologies-section">
+        <p class="large-text">ACEITAMOS PROJETOS COM AS TECNOLOGIAS</p>
+        <div id="technologies-list-wrapper">
+            <div class="technologies-list-item html-tech">
+                <p class="normal-text">HTML</p>
+            </div>
+            <div class="technologies-list-item css-tech">
+                <p class="normal-text">CSS</p>
+            </div>
+        </div>
+    </div>
+    <div id="reasons-section">
+        <div id="reasons-wrapper">
+            <p class="large-text">MOTIVOS PARA TER UM SITE</p>
+            <p class="normal-text">Com a coded, você pode navegar em nossa coleção de templates e escolher aquele que é a sua cara. <br>Mas afinal, quais são as vantagens de ter um website hoje em dia?</p>
+            <div id="reasons-list-wrapper">
+                <div class="reasons-list-item">
+                    <div>
+                        <img src="assets/share-icon.svg" alt="">
+                    </div>
+                    <p class="medium-text">DIVULGAÇÃO</p>
+                    <p class="normal-text">Ao adaptar um dos templates da coded para o seu negócio, você tem sua marca exposta 24 horas por dia, 365 dias no ano</p>
+                </div>
+                <div class="reasons-list-item">
+                    <div>
+                        <img src="assets/digital-presence-icon.svg" alt="">
+                    </div>
+                    <p class="medium-text">UM NOVO PASSO</p>
+                    <p class="normal-text">Ao adentrar a era digital, você deixa de fazer parte da velha forma de fazer negócios, você ganha visibilidade, profissionalidade, escalabilidade e, ainda por cima, trasmite confiança para seus clientes</p>
+                </div>
+                <div class="reasons-list-item">
+                    <div>
+                        <img src="assets/accessbility-icon.svg" alt="">
+                    </div>
+                    <p class="medium-text">MAIS ACESSÍVEL</p>
+                    <p class="normal-text">Deixe de ter somente uma audiência loca, sua empresa será reconhecida nacionalmente e até internacionalmente</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-section">
+        <div id="form-wrapper">
+            <form action="/send-email" method="post" id="form-contact">
+                <p class="medium-text">CONTATO</p>
+                
+                <% if (typeof isLoggedIn == 'undefined') { %>
+                    <p class="normal-text">Faça <a class="normal-text" href="/login">login</a> para que você seja identificado</p>
+                <% } %>
 
+                <p class="normal-text">ASSUNTO</p>
+                <input type="text" name="subject" id="email-subject">
+
+                <p class="normal-text">MENSAGEM</p>
+                <textarea name="msg" id="email-msg"></textarea>
+                
+                <div class="wrapper">
+                    <input type="submit" class="action-btn">    
+                </div>
+            </form>
+        </div>
     </div>
     <%- include('layout/footer'); %>
     <script src="/js/handle-down-arrow.js"></script>

@@ -7,6 +7,7 @@ const app = express()
 //const wizardsController = require('./controller/wizardsController')
 const userController = require('./controller/userController')
 const userProfileController = require('./controller/userProfileController')
+const featureController = require('./controller/featureController')
 
 app.use(session({
     secret: '829719F301',
@@ -21,9 +22,15 @@ app.set('view engine', 'ejs')
 
 app.get('/', function(req, res){
     res.render('index', {
-        user: req.session.username, isLoggedIn: req.session.loggedin, userId: req.session.userId, userImg: req.session.userImg
+        user: req.session.username, 
+        isLoggedIn: req.session.loggedin, 
+        userId: req.session.userId, 
+        userImg: req.session.userImg,
+        userEmail: req.session.userEmail
     })
 })
+
+app.post('/send-email', featureController.sendEmail)
 
 /*
 app.get('/wizards', wizardsController.index)

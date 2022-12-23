@@ -1,5 +1,9 @@
+body .wrapper {
+  display: flex;
+  justify-content: center;
+}
 body .action-btn {
-  background-color: #0190C9;
+  background-color: #0190C9 !important;
   padding: 5px 15px;
   margin: 0;
   color: #ECECEC;
@@ -144,4 +148,146 @@ body #team-section #pvw-team #profile-example img {
   max-height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body #technologies-section {
+  background-image: url("/assets/home-bg-alt.png");
+}
+body #technologies-section p {
+  text-align: center;
+}
+body #technologies-section > p {
+  padding-top: 35px;
+}
+body #technologies-section #technologies-list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+body #technologies-section #technologies-list-wrapper .technologies-list-item {
+  border-radius: 10px;
+  width: 450px;
+  height: 400px;
+  margin: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+body #technologies-section #technologies-list-wrapper .technologies-list-item > p {
+  width: 30%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+body #technologies-section #technologies-list-wrapper .html-tech {
+  background-image: url("/assets/html-code.png");
+}
+body #technologies-section #technologies-list-wrapper .html-tech > p {
+  background-color: #AD1E4C;
+}
+body #technologies-section #technologies-list-wrapper .css-tech {
+  background-image: url("/assets/css-code.png");
+}
+body #technologies-section #technologies-list-wrapper .css-tech > p {
+  background-color: #0190C9;
+}
+body #reasons-section {
+  display: flex;
+  justify-content: center;
+}
+body #reasons-section #reasons-wrapper {
+  width: 80%;
+  padding: 35px;
+  box-sizing: border-box;
+}
+body #reasons-section p {
+  text-align: center;
+}
+body #reasons-section #reasons-list-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 0 0;
+  box-sizing: border-box;
+}
+body #reasons-section #reasons-list-wrapper .reasons-list-item {
+  background-color: #2C2C2C;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 15px;
+}
+body #reasons-section #reasons-list-wrapper .reasons-list-item > p {
+  text-align: start;
+  padding: 15px 0 0 0;
+}
+body #reasons-section #reasons-list-wrapper .reasons-list-item div {
+  margin: -50px 0 0 0;
+  background-color: #0190C9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #reasons-section #reasons-list-wrapper .reasons-list-item div img {
+  width: 65%;
+}
+body #contact-section {
+  display: flex;
+  justify-content: center;
+}
+body #contact-section #form-wrapper {
+  background-image: url("/assets/contact-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  border-radius: 15px;
+}
+body #contact-section #form-wrapper form {
+  background-color: rgba(44, 44, 44, 0.7137254902);
+  width: 70%;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+body #contact-section #form-wrapper form p {
+  padding: 0 0 10px 0;
+}
+body #contact-section #form-wrapper form p:first-child {
+  padding: 0 0 20px 0;
+}
+body #contact-section #form-wrapper form input {
+  width: 100%;
+  margin: 0 0 30px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  color: white;
+  background-color: #080609;
+  outline: none;
+  border: none;
+}
+body #contact-section #form-wrapper form textarea {
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  color: white;
+  background-color: #080609;
+  outline: none;
+  border: none;
+  min-height: 50px;
+  max-height: 200px;
+  resize: vertical;
+}
+body #contact-section #form-wrapper form div {
+  padding: 30px 0 0 0;
+}
+body #contact-section #form-wrapper form div input[type=submit] {
+  width: auto;
+  margin: 0;
 }/*# sourceMappingURL=index.css.map */

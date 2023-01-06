@@ -6,6 +6,54 @@ body {
   margin: 0;
   padding: 0;
 }
+body .wrapper {
+  display: flex;
+  justify-content: center;
+}
+body .action-btn {
+  background-color: #0190C9 !important;
+  padding: 5px 15px;
+  margin: 0;
+  color: #ECECEC;
+  border-radius: 5px;
+  text-decoration: none;
+}
+body .action-btn-1 {
+  background-color: #AD1E4C;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-1 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+body .action-btn-2 {
+  background-color: #DF6550;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-2 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+body .action-btn-3 {
+  background-color: #0D3263;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+body .action-btn-3 a {
+  margin: 0;
+  color: #ECECEC;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
 body .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -31,4 +79,31 @@ body .normal-text {
   font-size: 1rem;
   font-weight: 100;
   color: #ECECEC;
+}
+body #search-bar-wrapper {
+  width: 100%;
+  text-align: center;
+}
+body #search-bar-wrapper p {
+  margin-top: 10px;
+  color: #ECECEC;
+  font-size: 1rem;
+}
+body #search-bar-wrapper input {
+  margin: 20px 0;
+  width: 35%;
+  height: 20px;
+  padding: 5px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+  border: 1px solid #0190C9;
+  border-radius: 5px;
+  background-color: #2C2C2C;
+  color: #ECECEC;
+  outline: none;
+}
+body .content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
 }/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,102 @@
+#template-section {
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#template-section #templates {
+  background-color: #080609;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#template-section #templates #title-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#template-section #templates #title-section div {
+  align-self: center;
+}
+#template-section #templates #title-section div #category-picker {
+  padding: 10px 0;
+  display: flex;
+}
+#template-section #templates #title-section div #category-picker div {
+  margin-right: 10px;
+}
+#template-section #templates #title-section div #type-filter {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+}
+#template-section #templates #wrapper {
+  margin: 15px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+#template-section #templates #wrapper .template {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-image: url("/assets/pvw-template-filler.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#template-section #templates #wrapper .template .goto {
+  height: 200px;
+}
+#template-section #templates #wrapper .template .categories {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #ECECEC;
+  border-top: 5px solid #2C2C2C;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#template-section #templates #wrapper .template .categories div {
+  flex: 1;
+}
+#template-section #templates #paginator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+#template-section #templates #paginator .paginator-button {
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: none;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  margin: 5px;
+}
+#template-section #templates #paginator .main {
+  border: 1px solid #0190C9;
+  color: #0190C9;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.75rem;
+}
+#template-section #templates #paginator a img {
+  width: 10px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+#template-section #templates #paginator a .paginator-left {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=template.css.map */

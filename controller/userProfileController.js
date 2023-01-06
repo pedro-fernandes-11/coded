@@ -1,6 +1,4 @@
-const bcrypt = require('bcrypt')
 const userModel = require("../model/user.js")
-const saltRounds = 10
 
 module.exports = {
     show: function(req, res){

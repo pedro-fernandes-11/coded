@@ -8,6 +8,7 @@ const app = express()
 const userController = require('./controller/userController')
 const userProfileController = require('./controller/userProfileController')
 const featureController = require('./controller/featureController')
+const templateController = require('./controller/templateController.js')
 
 app.use(session({
     secret: '829719F301',
@@ -31,6 +32,12 @@ app.get('/', function(req, res){
 })
 
 app.post('/send-email', featureController.sendEmail)
+
+app.get('/template', function(req, res){
+    res.render('templates')
+})
+
+app.get('/template/:id', templateController.show)
 
 /*
 app.get('/wizards', wizardsController.index)

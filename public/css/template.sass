@@ -1,0 +1,110 @@
+@import 'settings/_color', 'settings/_font'
+
+#template-section
+        padding: 15px 0 0 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+        #templates
+            background-color: $grayscale1
+            width: 80%
+            padding: 20px
+            border-radius: 10px
+            box-sizing: border-box
+
+            #title-section
+                display: flex
+                justify-content: space-between
+                padding: 10px 0
+
+                div
+                    align-self: center
+
+                    #category-picker
+                        padding: 10px 0
+                        display: flex
+
+                        div
+                            margin-right: 10px
+                    
+                    #type-filter
+                        padding: 5px 10px
+                        border: none
+                        border-radius: 5px
+                        outline: none
+                        width: 200px
+
+
+            #wrapper
+                margin: 15px 0 0 0
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                gap: 15px
+
+                .template
+                    display: flex
+                    flex-direction: column
+                    border-radius: 10px
+                    background-image: url("/assets/pvw-template-filler.png")
+                    background-position: center
+                    background-size: cover
+                    background-repeat: no-repeat
+
+                    .goto
+                        height: 200px
+
+                    .categories
+                        display: flex
+                        gap: 10px
+                        padding: 10px
+                        background-color: $grayscale4
+                        border-top: 5px solid $grayscale2
+                        border-bottom-left-radius: 10px
+                        border-bottom-right-radius: 10px
+
+                        div
+                            flex: 1
+                
+            #paginator
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 20px 0
+
+                .paginator-button
+                    cursor: pointer
+                    border-radius: 50%
+                    text-align: center
+
+                    width: 40px
+                    height: 40px
+                    line-height: 40px
+
+                    background-color: none
+                    border: 1px solid $grayscale5
+                    color: $grayscale5
+                    box-sizing: border-box
+
+                    margin: 5px
+
+                .main
+                    border: 1px solid $secondary2
+                    color: $secondary2
+                    text-align: center
+
+                    width: 50px
+                    height: 50px
+                    line-height: 50px
+
+                    font-size: $large-text
+                        
+                a
+                    img
+                        width: 10px
+                        margin: 0 15px
+                        cursor: pointer 
+
+                    .paginator-left
+                        transform: rotate(180deg)

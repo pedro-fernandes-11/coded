@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/css/template.css" rel="stylesheet">
+    <title>Início</title>
+</head>
+<body>
+    <div id="header">
+        <div id="main-header">
+            <%- include('layout/main-header'); %>
+        </div>
+    </div>
+    
+    <div id="template-content">
+        <div id="all-templates">
+            <img src="/assets/back.svg" alt="">
+            <p>TEMPLATES</p>
+        </div>
+        <div id="template-desc">
+            <p class="large-text template-title">
+                <%=name%> | <%=rating%> <img src="/assets/star.svg" alt="">
+            </p>
+            <p class="medium-text template-desc">
+                <%=desc%>
+            </p>
+            <img src="" alt="">
+            <div id="template-action">
+                <a class="action-btn">INICIAR SIMULAÇÃO</a>
+                <a class="action-btn">PREVIEW</a>
+            </div>
+        </div>
+        <div id="template-info">
+            <div id="template-creator">
+                Desenvolvido por <%=devName%>
+            </div>
+            <div id="template-delete">
+                <p class="medium-texto">Apagar template</p>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="template-comments">
+        <p class="medium-text"><%=comments.length%> comentários</p>
+        <div class="comment">
+            <img src="" alt="">
+            <div><input type="text" placeholder="Adicione um comentário..."></div>
+        </div>
+        <% for(var i = 0; i < comments.length; i++) { %>
+            <div class="comment">
+                <img src="/assets/user/<%=comments[i].commentUserImage%>" alt="<%=comments[i].commentUserImage%>">
+                <div>
+                    <p class="medium-text"><%=comments[i].commentUserName%></p>
+                    <p class="medium-text"><%=comments[i].commentText%></p>
+                    <img src="" alt="">
+                </div>
+            </div>
+          <% } %>
+    </div>
+
+    <%- include('layout/footer'); %>
+</body>
+</html>
